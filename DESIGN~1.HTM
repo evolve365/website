@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Concept — Boutique Dossier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf8f3;
+    --ink:#1b2420;
+    --ink-soft:#5a6259;
+    --ink-faint:#8b9188;
+    --green:#0b5c50;
+    --green-deep:#083f37;
+    --border:#d9d4c8;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 28px;}
+  header{padding:28px 0; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;}
+  .word{font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; letter-spacing:-0.01em;}
+  .word span{color:var(--green);}
+  nav a{font-size:0.85rem; color:var(--ink-soft); text-decoration:none; margin-left:26px;}
+  .label{font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--green); font-weight:600; display:flex; align-items:center; gap:10px;}
+  .label::before{content:''; width:22px; height:1px; background:var(--green);}
+  .hero{padding:64px 0 52px;}
+  h1{font-family:'Fraunces',serif; font-weight:500; font-size:2.5rem; line-height:1.18; letter-spacing:-0.01em; margin:18px 0 22px; max-width:640px;}
+  h1 u{text-decoration:none; border-bottom:2px solid var(--green); }
+  .lead{font-size:1.05rem; color:var(--ink-soft); max-width:520px; line-height:1.6; margin-bottom:28px;}
+  .link-cta{font-size:0.95rem; font-weight:600; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:2px;}
+  .rule{border:none; border-top:1px solid var(--border); margin:0;}
+  .dossier{padding:56px 0;}
+  .dossier-head{margin-bottom:32px;}
+  .dossier-head h2{font-family:'Fraunces',serif; font-weight:500; font-size:1.5rem; margin:14px 0 0;}
+  .item{display:grid; grid-template-columns:64px 1fr; gap:20px; padding:26px 0; border-top:1px solid var(--border);}
+  .item:last-child{border-bottom:1px solid var(--border);}
+  .num{font-family:'Fraunces',serif; font-size:1.6rem; color:var(--ink-faint); font-weight:400;}
+  .item h3{margin:0 0 8px; font-size:1.05rem; font-weight:600;}
+  .item p{margin:0; color:var(--ink-soft); font-size:0.92rem; line-height:1.55; max-width:480px;}
+  .item .tag{font-size:0.72rem; color:var(--green); font-weight:600; letter-spacing:0.04em; text-transform:uppercase; margin-left:10px;}
+  .quote{padding:56px 0; display:grid; grid-template-columns:40px 1fr; gap:20px;}
+  .qmark{font-family:'Fraunces',serif; font-size:3rem; color:var(--green); line-height:1;}
+  .quote p{font-family:'Fraunces',serif; font-weight:400; font-size:1.3rem; line-height:1.5; margin:0 0 14px; max-width:560px;}
+  .quote span{font-size:0.85rem; color:var(--ink-soft);}
+  footer{padding:32px 0 48px; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border);}
+  footer p{font-size:0.8rem; color:var(--ink-faint); margin:0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="word">Technologies <span>Evolve365</span></div>
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="label">N&deg; 01 &mdash; Independent ERP &amp; CRM advisory</div>
+    <h1>Your ERP transformation is only as strong as <u>the governance behind it</u>.</h1>
+    <p class="lead">We help executive teams protect complex transformation investments and deliver measurable business outcomes &mdash; independent of any vendor, accountable only to you.</p>
+    <a class="link-cta" href="#">Book an executive assessment &rarr;</a>
+  </section>
+
+  <hr class="rule">
+
+  <section class="dossier">
+    <div class="dossier-head">
+      <div class="label">N&deg; 02 &mdash; The engagements</div>
+      <h2>Four ways in, one point of view</h2>
+    </div>
+
+    <div class="item">
+      <div class="num">01</div>
+      <div>
+        <h3>Risk &amp; Readiness Assessment <span class="tag">Entry</span></h3>
+        <p>An independent read on program risk and organizational readiness, delivered as an executive scorecard, not a slide deck.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="num">02</div>
+      <div>
+        <h3>Strategy &amp; Partner Selection</h3>
+        <p>Platform-agnostic evaluation before you commit capital, informed by deep Microsoft Dynamics 365 delivery experience.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="num">03</div>
+      <div>
+        <h3>Recovery &amp; Stabilization <span class="tag">Urgent</span></h3>
+        <p>Rapid, independent diagnosis and a re-baselined path back to control when a program is off track.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="num">04</div>
+      <div>
+        <h3>Executive Transformation Advisory <span class="tag">Flagship</span></h3>
+        <p>Ongoing executive oversight for the life of the program &mdash; the relationship every other engagement leads to.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="qmark">&ldquo;</div>
+    <div>
+      <p>We help executive teams protect complex transformation investments and deliver measurable business outcomes.</p>
+      <span>Technologies Evolve365 &mdash; Our Core Promise</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Technologies Evolve365</p>
+    <p>Independent ERP &amp; CRM Transformation Advisory</p>
+  </footer>
+
+</div>
+</body>
+</html>
