@@ -148,18 +148,12 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 .logo-mark {
-  width: 34px;
-  height: 34px;
+  height: 52px;
+  width: auto;
+  object-fit: contain;
   border-radius: var(--radius-sm);
-  background: var(--accent-deep);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
-  font-size: 0.8rem;
   flex-shrink: 0;
+  display: block;
 }
 .logo small {
   display: block;
@@ -835,6 +829,20 @@ tr:last-child td { border-bottom: none; }
   display: flex; align-items: center; justify-content: center;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem; font-weight: 500; margin-top: 2px;
+}
+
+/* ---------- Founder section (seamless, divider line) ---------- */
+.founder-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+}
+.founder-col-left { padding-right: 40px; }
+.founder-col-right { border-left: 1px solid var(--border); padding-left: 40px; }
+@media (max-width: 760px) {
+  .founder-grid { grid-template-columns: 1fr; gap: 28px; }
+  .founder-col-left { padding-right: 0; }
+  .founder-col-right { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 28px; }
 }
 
 /* ---------- Signature accent (founder name) ---------- */
