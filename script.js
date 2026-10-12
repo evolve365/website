@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('cf-name');
       const nameVal = name ? name.value.split(' ')[0] : 'there';
       if (success) {
-        success.textContent = `Thanks, ${nameVal || 'there'} — your message has been received. Our team will reach out within one business day.`;
+        success.textContent = `Thanks, ${nameVal || 'there'} — your message has been received. Ramita will reach out within one business day.`;
         success.style.display = 'block';
         success.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
